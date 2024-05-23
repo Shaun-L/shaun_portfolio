@@ -2,8 +2,9 @@ import React from "react";
 import { getImageUrl } from "../../utils";
 import styles from "./About.module.css"
 
-export const about = () => {
-  return <section className={styles.container} id="about">
+export const About = () => {
+  return (
+  <section className={styles.container} id="about">
     <h2 className={styles.title}>About</h2>
     <div className={styles.content}>
       <img src ={getImageUrl("about/aboutImage.png")}
@@ -37,4 +38,5 @@ export const about = () => {
       </ul>
     </div>
   </section>
+  );
 };
